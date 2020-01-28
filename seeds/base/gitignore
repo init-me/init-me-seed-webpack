@@ -1,0 +1,12 @@
+node_modules/*
+**/node_modules/*
+.bin/
+output/*
+.sass-cache/
+.idea/
+config.mine.js
+build/
+.rpt2_cache/
+
+.DS_Store
+**/.DS_Store

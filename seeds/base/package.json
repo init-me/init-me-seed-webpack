@@ -1,0 +1,41 @@
+{
+  "name": "__data('name')",
+  "version": "0.1.0",
+  "main": "output/index.js",
+  "types": "output/index.d.ts",
+  "scripts": {
+    "all": "webpack",
+    "w": "webpack-dev-server",
+    "b": "cross-env NODE_ENV=production webpack",
+    "_prepublish": "cross-env NODE_ENV=production webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "style-loader": "^1.0.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2",
+    "yyl-fs": "^0.3.3",
+    "yyl-os": "^0.10.2",
+    "yyl-util": "^2.3.7"
+  }
+}
