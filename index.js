@@ -138,6 +138,7 @@ const config = {
       if (!env || !env.noinstall) {
         print.log.info(lang.NPM_INSTALL_START)
         await extOs.runCMD('npm install', targetPath)
+        await extOs.runCMD('npm install', path.join(targetPath, 'test/case/base'))
         print.log.success(lang.NPM_INSTALL_FINISHED)
       }
       // - install

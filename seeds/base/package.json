@@ -3,9 +3,19 @@
   "version": "0.1.0",
   "main": "output/index.js",
   "types": "output/index.d.ts",
+  "eslintConfig": {
+    "extends": [
+      "standard"
+    ]
+  },
+  "eslintIgnore": [
+    "/dev",
+    "/output"
+  ],
   "scripts": {
     "all": "webpack",
-    "w": "webpack-dev-server",
+    "w": "webpack --watch",
+    "dev": "cd test/case/base & npm run d",
     "b": "cross-env NODE_ENV=production webpack",
     "_prepublish": "cross-env NODE_ENV=production webpack"
   },
@@ -14,28 +24,29 @@
   "description": "",
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.6.4",
+    "@babel/core": "^7.8.3",
     "babel-loader": "^8.0.6",
-    "clean-webpack-plugin": "^3.0.0",
-    "cross-env": "^7.0.0",
-    "css-loader": "^3.2.0",
-    "file-loader": "^4.2.0",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.6.0",
+    "eslint-config-node": "^4.0.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-node": "^10.0.0",
+    "file-loader": "^5.0.2",
     "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.8.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
-    "style-loader": "^1.0.0",
+    "style-loader": "^1.1.3",
     "ts-loader": "^6.2.1",
+    "tslint": "^5.18.0",
+    "tslint-config-standard": "^9.0.0",
     "typescript": "^3.7.5",
     "uglifyjs-webpack-plugin": "^2.2.0",
-    "url-loader": "^2.2.0",
-    "webpack": "^4.41.0",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.2",
-    "yyl-fs": "^0.3.3",
-    "yyl-os": "^0.10.2",
+    "url-loader": "^3.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
     "yyl-util": "^2.3.7"
   }
 }

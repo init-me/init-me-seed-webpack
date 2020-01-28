@@ -8,6 +8,15 @@
     "eslint": "eslint ./index.js",
     "test": "jest ./test"
   },
+  "eslintConfig": {
+    "extends": [
+      "standard"
+    ]
+  },
+  "eslintIgnore": [
+    "/seeds",
+    "/test"
+  ],
   "engines": {
     "node": ">= 8.0.0"
   },
